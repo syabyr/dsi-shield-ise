@@ -28,7 +28,7 @@ use work.genram_pkg.all;
 entity xurv_core is
   generic (
     g_internal_ram_size      : integer := 65536;
-    g_internal_ram_init_file : string  := "";
+    g_internal_ram_init_file : string  := "boot.ram";
     g_simulation             : boolean := false;
     g_address_bits           : integer := 32
     );
