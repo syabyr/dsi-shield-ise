@@ -133,9 +133,9 @@
     <property xil_pn:name="ISim UUT Instance Name" xil_pn:value="UUT" xil_pn:valueState="default"/>
     <property xil_pn:name="Ignore User Timing Constraints Map" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Ignore User Timing Constraints Par" xil_pn:value="false" xil_pn:valueState="default"/>
-    <property xil_pn:name="Implementation Top" xil_pn:value="Architecture|rev2_top|rtl" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Implementation Top File" xil_pn:value="../../top/xc6slx16-rev1/rev2_top.vhd" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Implementation Top Instance Path" xil_pn:value="/rev2_top" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Implementation Top" xil_pn:value="Architecture|xc6slx16-rev1|rtl" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Implementation Top File" xil_pn:value="../../top/xc6slx16-rev1/xc6slx16-rev1.vhd" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Implementation Top Instance Path" xil_pn:value="/xc6slx16-rev1" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Include 'uselib Directive in Verilog File" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Include SIMPRIM Models in Verilog File" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Include UNISIM Models in Verilog File" xil_pn:value="false" xil_pn:valueState="default"/>
@@ -188,7 +188,7 @@
     <property xil_pn:name="Other Compxlib Command Line Options" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Other Map Command Line Options" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Other NETGEN Command Line Options" xil_pn:value="" xil_pn:valueState="default"/>
-    <property xil_pn:name="Other Ngdbuild Command Line Options" xil_pn:value="-bm rev2_top.bmm" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Other Ngdbuild Command Line Options" xil_pn:value="-bm xc6slx16-rev1.bmm" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Other Place &amp; Route Command Line Options" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Other Simulator Commands Behavioral" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Other Simulator Commands Post-Map" xil_pn:value="" xil_pn:valueState="default"/>
@@ -197,7 +197,7 @@
     <property xil_pn:name="Other XPWR Command Line Options" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Other XST Command Line Options" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Output Extended Identifiers" xil_pn:value="false" xil_pn:valueState="default"/>
-    <property xil_pn:name="Output File Name" xil_pn:value="rev2_top" xil_pn:valueState="default"/>
+    <property xil_pn:name="Output File Name" xil_pn:value="xc6slx16-rev1" xil_pn:valueState="default"/>
     <property xil_pn:name="Overwrite Compiled Libraries" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Pack I/O Registers into IOBs" xil_pn:value="Yes" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Pack I/O Registers/Latches into IOBs" xil_pn:value="For Inputs and Outputs" xil_pn:valueState="non-default"/>
@@ -344,7 +344,7 @@
   <libraries/>
 
   <files>
-    <file xil_pn:name="../../top/xc6slx16-rev1/rev2_top.ucf" xil_pn:type="FILE_UCF">
+    <file xil_pn:name="../../top/xc6slx16-rev1/xc6slx16-rev1.ucf" xil_pn:type="FILE_UCF">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="../../ip_cores/local/gencores_pkg.vhd" xil_pn:type="FILE_VHDL">
@@ -476,7 +476,7 @@
     <file xil_pn:name="../../ip_cores/local/uart_async_tx.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="Implementation" xil_pn:seqID="38"/>
     </file>
-    <file xil_pn:name="../../top/xc6slx16-rev1/rev2_top.vhd" xil_pn:type="FILE_VHDL">
+    <file xil_pn:name="../../top/xc6slx16-rev1/xc6slx16-rev1.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="Implementation" xil_pn:seqID="74"/>
     </file>
     <file xil_pn:name="../../ip_cores/local/wishbone_pkg.vhd" xil_pn:type="FILE_VHDL">
@@ -620,7 +620,7 @@
   </files>
 
   <bindings>
-    <binding xil_pn:location="/rev2_top" xil_pn:name="../../top/xc6slx16-rev1/rev2_top.ucf"/>
+    <binding xil_pn:location="/xc6slx16-rev1" xil_pn:name="../../top/xc6slx16-rev1/xc6slx16-rev1.ucf"/>
   </bindings>
 
   <version xil_pn:ise_version="14.7" xil_pn:schema_version="2"/>

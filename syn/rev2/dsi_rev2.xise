@@ -49,7 +49,7 @@
     <property xil_pn:name="Change Device Speed To" xil_pn:value="-2" xil_pn:valueState="default"/>
     <property xil_pn:name="Change Device Speed To Post Trace" xil_pn:value="-2" xil_pn:valueState="default"/>
     <property xil_pn:name="Combinatorial Logic Optimization" xil_pn:value="true" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Compile EDK Simulation Library" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Compile EDK Simulation Library" xil_pn:value="false" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Compile SIMPRIM (Timing) Simulation Library" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Compile UNISIM (Functional) Simulation Library" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Compile XilinxCoreLib (CORE Generator) Simulation Library" xil_pn:value="true" xil_pn:valueState="default"/>
@@ -81,6 +81,7 @@
     <property xil_pn:name="Enable Cyclic Redundancy Checking (CRC) spartan6" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable Debugging of Serial Mode BitStream" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable External Master Clock spartan6" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Enable Hardware Co-Simulation" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable Internal Done Pipe" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable Message Filtering" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable Multi-Pin Wake-Up Suspend Mode spartan6" xil_pn:value="false" xil_pn:valueState="default"/>
@@ -617,10 +618,20 @@
     <file xil_pn:name="../../rtl/hdmi_rx/serdes_1_to_5_diff_data.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="Implementation" xil_pn:seqID="25"/>
     </file>
+    <file xil_pn:name="rev2_top.bmm" xil_pn:type="FILE_BMM">
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="rev2_top.elf" xil_pn:type="FILE_ELF"/>
+    <file xil_pn:name="boot.mem" xil_pn:type="FILE_MEM">
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
   </files>
 
   <bindings>
     <binding xil_pn:location="/rev2_top" xil_pn:name="../../top/rev2/rev2_top.ucf"/>
+    <binding xil_pn:location="/rev2_top" xil_pn:name="rev2_top.bmm"/>
+    <binding xil_pn:location="/rev2_top" xil_pn:name="rev2_top.elf"/>
+    <binding xil_pn:location="/rev2_top" xil_pn:name="boot.mem"/>
   </bindings>
 
   <version xil_pn:ise_version="14.7" xil_pn:schema_version="2"/>
